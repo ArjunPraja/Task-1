@@ -1,0 +1,718 @@
+/* Reset styles */
+body, ul, li, a, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+
+  /* Header Styling */
+  header {
+    margin: 0px 0px 0px 120px;
+    height: 100px;
+    width: 85%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Box 1 - Left Section */
+  .box1 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .menu-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .menu-links li a {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .search-container {
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  /* Box 2 - Center Section */
+  .box2 {
+    height: 100%;
+    width: 60%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box2 h1 {
+    margin: 0;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .box2 .menu-links {
+    margin-top: 10px;
+    color: black;
+  }
+
+  .box2 .menu-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .box2 .menu-links li a {
+    
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Box 3 - Right Section */
+  .box3 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .icon-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .icon-links li a {
+    font-size: 20px;
+  }
+
+  .box3 ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .box3 li a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+/* First-box */
+.first-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    width: 1400px;
+    margin: 0px auto;
+    background-image: url('df71e406c99fc2a8fdd78cdc54a5c46f.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.first-box-1 {
+    flex: 1;
+    height: 100%;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   
+     /* Add a semi-transparent background */
+}
+
+.first-box-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.first-image {
+    height: 500px;
+    width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.first-box-2 h1 {
+    margin: 0;
+    color: #333;
+    font-size: 2rem;
+}
+.pre{
+    margin: 30px;
+}
+
+
+
+
+/* Company Logos  */
+.collab-company {
+    justify-content: center;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between each logo */
+    
+    background-color: #fff; /* Optional: Adjust background color */
+  }
+  
+  .logo {
+    height: 60px; 
+    object-fit: contain;
+  }
+  
+  .extra-logos {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+/* Sixth Last Box  */
+
+.hrr{
+    margin: 20px 140px 60px 140px;
+}
+.Sixth-last
+{
+    margin: 30px 140px 0px 140px;
+    height: 500px;
+    width: 1400px;
+  
+    display: flex;
+}
+
+
+.sixth-last-first{
+   margin-top: 100px;
+    justify-content: center;
+    margin-bottom:50px;
+    align-items: center;
+    width:650px;
+    height: 500px;
+    
+}
+.sixth-last-second{
+    display: flex;
+}
+.sixth-last-second-1{
+    height: 500px;
+    width: 400px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/ad7c/44f1/cd4f20928c9e372fe6771bb5435e9f53?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AwPTm1mjNxH7Yq1S0XAdozh301qDTMhD4FauheyDUeD4rIuJJKit44~TOemW6e9G2DaGvDn0CUVs3so~OITuBa8gQ3maBrYQ3qxzS-fKNM-WyuujkHb4aa2jBpfl6tqidEX0U7fh0mvFq7ZLDAWm2fEIi3LlY~fp~7Z4kwUfUzb7xe3iN6O6RGSBi8Wn2LZ1CGeyj8b-dyRpXAE7TPM1IcdOIUyEcuLyOwPFCvaBpze0Lve0CPYx3Vok41TN0T7jjcUPnWKIMFM56g8fVIKxkEcN1ObcTbEoPyQ9OhAvj8MwDSUhedsPUnh5W0x4psrUPpxZCtSbT9GpepfWuVWohQ__');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+.sixth-last-second-2{
+    
+    height: 500px;
+    width: 400px;
+    background-image:url('https://s3-alpha-sig.figma.com/img/ae8d/4060/ffe8dd9578d71ad5a1266920f32ff39b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OtuHdPD12rEUXGksbbBnUhgNQRN9j5qKzEVNeZMaoVj6dHG7Jz5RDG8NhOKjeUSQOfl5CMytr2OIDK6bnt0DLLpjjWKWSjmYNg4qt-bdk5RcQnsdy6I~WfmJWoFAIdejxWBBlQkcpAiGipY7JIIdUDq10P7sc1gk-ze50xKe13MaMB5aLIopLi003HcrRWloNvMHFo8tBQnsOnfY2pcIkxe7toVn98EMnh05dGbFWt6NCgIJ9kkAkjFOkkejHeRnJUwy0pYckDIZYxHKzFKIWOoei5ExQWznOKvzelTAmbP9sTd-3P4CyB8d0D-HVHm8QCcRvjDLuCQUU7YrKM1OvQ__');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    align-content:center ;
+    
+}
+
+
+.ar{
+    margin-top: 30px;
+    display: flex;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fifth Last Box */
+.Fifth-last{
+    margin: 0px 130px 130px 130px;
+    height: 550px;
+    width: 1400px;
+    
+}
+.fifth-last-1{
+    display: flex;
+   
+
+}
+.fifth-last-1 h1{
+    margin :55px 55px 20px 55px ;
+}
+.fifth-last-2{
+    display: flex;
+}
+.fifth-last-2-4{
+    margin: 20px;
+    height:450px;
+    width: 320px;
+  
+}
+.x{
+
+    height: 349px;
+    width:319px;
+    
+}
+.y{
+    height: 200px;
+    width: 140px;
+    
+}
+.z{
+    display: flex;
+    
+}
+.a{
+    height: 230px;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fouth Last Box */
+
+.Fourth-last{
+    height: 500px;
+    margin: 50px 10px 50px 120px;
+    width: 1400px;
+    background-image: url('Screenshot 2025-01-04 142717.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+
+.fourth-last-2{
+    padding-top: 20px;
+    height: 48%;
+    width: 48%;
+    
+    color: white;
+}
+.fourth-last-1{
+    height: 48%;
+    width: 48%;
+    display: flex;
+   
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+}
+
+.play-button {
+    margin-left: 200px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid #000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 8px; /* Adjust to center the triangle visually */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Third Last Box  */
+
+
+.third-last-slider-container {
+    display: flex;
+    text-align: center;
+    height: 600px;
+    margin: 0px 0px 0px 140px ;
+    align-items: center; /* Centering the slider */
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    overflow: hidden;
+    background-color: WHITE;
+    
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 25%; /* Show 4 images at a time */
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 5px 2px rgb(194, 187, 187) ;
+
+
+}
+
+.slide img {
+    width: 250px;
+    height: 400px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .third-last-slider-container {
+        height: 500px;
+    }
+
+    .slide img {
+        width: 200px;
+        height: 350px;
+    }
+
+    .prev, .next {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .third-last-slider-container {
+        height: 400px;
+        margin: 80px auto;
+    }
+
+    .slide img {
+        width: 150px;
+        height: 300px;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .third-last-slider-container {
+        height: 300px;
+        margin: 60px auto;
+        width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .slide {
+        min-width: 50%; /* Show 2 images at a time */
+    }
+
+    .slide img {
+        width: 120px;
+        height: 200px;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second Last Box  */
+.box-second-last{
+    background-color:#eee9dc;
+    height:800px;
+    width: 1400px;
+    margin: 30px 0px 0px 140px ;
+    border: 2px solid #eee9dc;
+    border-radius: 30px ;
+    
+}
+.box-second-last-div-1{
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    
+}
+.box-second-last-div-1-1{
+    height: 280px;
+    width: 650px;
+    padding: 20px;
+    
+    
+    
+}
+.box-second-last-div-1-2{
+    height: 280px;
+    width: 650px;
+    padding: 20px;
+    background-image: url("Screenshot 2025-01-05 095635.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+
+    
+}
+.box-second-last-div-1-1-button{
+    height: 40px; /* Sets the button's height to 40 pixels. */
+    font-size: 26px; /* Sets the font size of the button's text. */
+    font-weight: bold; /* Makes the text bold. */
+    border-radius: 20px; /* Rounds the button's corners with a 20px radius. */
+    cursor: pointer; /* Changes the mouse cursor to a pointer (hand) when hovering over the button. */
+    padding: 0 20px; /* Adds padding inside the button (0px top/bottom and 20px left/right). */
+    background-color: #622662; /* Sets the background color of the button. */
+    color: white; /* Sets the text color to white. */
+    border: none; /* Removes the button's border. */
+    margin-top:50px;
+
+    
+}
+
+.second-last-text{
+    height: 30px;
+    width:400px;
+}
+.box-second-last-div-2{
+    height: 300px;
+    display: flex;
+    
+}
+
+.box-second-last-div-2-2 {
+    margin: 20px 50px 0px 50px;
+    height: 310px;
+    width: 250px;
+    background-color: green;
+}
+.box-second-last-div-2-2 img{
+    height: 310px;
+    width: 250px;
+   
+}
+.small-box-1{
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background-color: red;
+}
+.small-box-2{
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background-color:green;
+}
+.small-box-3{
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background-color: rgb(70, 68, 68);
+}
+.second-last-box-smallbox-com{
+    margin-top: 10px;
+    display: flex;
+}
+.second-last-box-smallbox-price{
+    margin-top: 10px;
+    justify-content: end;
+}
+
+/* Responsive Design: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .box-second-last-div-1 {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+
+    .box-second-last-div-1-1,
+    .box-second-last-div-1-2 {
+        width: 100%; /* Full width for each column */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .second-last-text {
+        width: 100%; /* Ensure the text box takes full width */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .box-second-last-div-2 {
+        flex-direction: column; /* Stack the second section vertically */
+    }
+
+    .box-second-last-div-2-2 {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width restriction */
+        margin: 10px 0; /* Add space between the boxes */
+    }
+}
+
+@media (max-width: 480px) {
+    .box-second-last {
+        width: 100%; /* Take full width on very small screens */
+        height: auto; /* Adjust height for better layout */
+    }
+
+    .box-second-last-div-1-1-button {
+        width: 100%; /* Make button full-width on small screens */
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .small-box {
+        width: 10px;
+        height: 10px;
+    }
+}

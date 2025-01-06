@@ -1,0 +1,79 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer Columns */
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* App Buttons */
+.app-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 80%;
+}
+
+.apple {
+    background-color: #0a0a0a;
+}
+
+.google {
+    background-color: #5c2e91;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: right;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #888;
+}
+
+
