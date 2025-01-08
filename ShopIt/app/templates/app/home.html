@@ -1,0 +1,1137 @@
+{% extends "Base.html" %}
+
+{% block title %}ShopIt{% endblock %}
+
+
+{% block content %}
+
+
+  {% load static %}
+      <div class="first-box container "  style="background-image: url('{% static "images/df71e406c99fc2a8fdd78cdc54a5c46f.jpeg" %}'); height: 500px; width: 100%;">
+          <div class="first-box-1">
+             <h1 > SUMMER WOMEN'S <br>
+      
+              <u style=" font-family: 'Architects Daughter', cursive;" > BRAND JEANS </u> <b class="box-second-last-div-1-1-button">-35%</b></h1>
+              <pre class="pre">Pull&Bear, H&M, Zara, Bershka, New Yorker,<br> Reserved, Colin's, Asos </pre>
+              <button class="box-second-last-div-1-1-button">
+                  Shop Now →
+              </button>
+          </div>
+          <div class="first-box-2">
+            {% load static %}
+            <img class="first-image" src="{% static 'images/Screenshot 2025-01-05 210953.png' %}" alt="Sample Image">
+                      </div>
+      </div>
+  
+  <div class="collab-company">
+      
+        
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNLsminY2x-lMEuM52QPJim03S78z61-hw_Q&s" alt="Adidas" class="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWTG3yUe0yW-iqwH5zXTzDTfhzfzHqqoqgA&s" alt="ASOS" class="logo">
+          <img src="data:image/png;base64,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" alt="Bershka" class="logo">
+          <img src="data:image/png;base64,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" alt="Levi's" class="logo">
+          <img src="data:image/png;base64,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" alt="Nike" class="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_YlAt5GsDoENSlh1XRGq9Nj0c7NDAh1Lh9s5OfN2hcNBwGzXChDuKVnhbRNuVZWPgUzk&usqp=CAU" alt="Pull&Bear" class="logo">
+          <img src="data:image/png;base64,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" alt="Zara" class="logo">
+          <span class="extra-logos">+19</span>
+  </div>
+
+  <div class="container">
+    
+<div class="Seventh">
+
+    <div class="third-last-box">
+        <div class="third-last-slider-container">
+            <div class="slider-wrapper" id="sliderWrapper">
+                <!-- Image Slider -->
+                <div class="slide">
+                    <img src="https://s3-alpha-sig.figma.com/img/58a2/926b/df2892ed9fc9ad6de5b736b172881629?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W3EJ7TGYapXY6XRX8KwlYMeefrJG9lQtpSIQrQ~dwNwfx3PsBbLLVR9ipvmbsTaL5ae1A8iNLU~QQDEpskwOoOPPKOnuU3pwANAaRldYWUt3Ebb-CHA9ZK1LNvKAf6MwOn7AZ71g-E12zsUd3m-z1YPdsiPccBiBsajlTveC2hsvkVnwFDXnnlev3RxRDxkEgBdo9bZrGKvqwjG4WFNnlCe5vLAMKJpRRYcIQ1MoI4tgM67ZslkdFDuME8wbncRu3ZBMTzAvySh8s4q3XNUQM-ghn0iZdVcBpPGV6qgJqbO~iqCcPNiMBY3TV6MWoEoeM1gnJm6rdOTShjystS1Jgg__" alt="Image 1">
+                    <p>Dress0</p>
+                    <h3>SAMSOE SAMSOE</h3>
+                    <pre style="margin: 20px 0px 10px 45px ;" class="small-box-1 " >    |  All                                   230$</pre>
+                    
+                </div>
+
+                <div class="slide">
+                    <img src="https://s3-alpha-sig.figma.com/img/36dc/5ae9/b47e94455b6cd26c35732ad7e9b117cc?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ISckaOK1Ho3YFurogs8yS0IGLwMu218rI-m2vSGZ58pQw22XeKE0wzrWBGXtPSM1gTtpDPqgBuAp2XQo1S2zn-QM02l08r8Sm49og5hs8stWAMtpGyvEDnh3YZEZlkxZFSpIi9S8qhmxa6XVXaUuXhxfrA-t9IBdU6zoBQlqt~-czeUZ0TGM8JiBCVavshF72KNxnLh-i70sqeOdzy2SqvR1Nhc30r~CW3wnzffpZh6d8apQdfWKag0PRERCQMuS1XajDKetHy9QJ5lufEYrvsUlCYDizCqqNYJ5OR9bkmn7Q0OR8vpUfyIGVEDzyCYgkDk-4QyNgwPVD0IvFf2Mhg__" alt="Image 2">
+                    <p>Dress</p>
+                    <h3>MIX SIXETY</h3>
+                    <pre style="margin: 20px 0px 10px 45px ;" class="small-box-2" >     |  38 39 40                              289$</pre>
+                    
+                </div>
+
+                <div class="slide">
+                    <img src="https://s3-alpha-sig.figma.com/img/5667/aed0/cdd6d8bed69a4137b1ad8b80a9d630ca?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p2GZnl6to3hon8SQSqo0q8DfQs225vuNiUSzJ20aWMptg-x6umFLtYoE-8v~dfsjYS10QHC3MgL3vmeRDmUoip3POKEVn8P9Qu9N0f7qAn7V6JquFTof8vgwb1coegiCZvg8451kfCNJ2if-meglFBSry3AKpQkHazbJAlAl8yf6bTs1Pp1g9hn0VfqOjb~en9RLjXPAepxauC-U5GzvVuKgpb4cr0MtMtCX7DKuXCKyxjHPEjboDRhwrczgPSI8CCx2-IL5DKOgRXU~89fvGbPb~p-FzCbifObA-ys9dBtLC9f1UriLHYSKM6DstEdC6H5pECwquCVFKskTfKDk9Q__" alt="Image 3">
+                    <p>Leather sendals ITALIA</p>
+                    <h3>MANGO</h3>
+                    
+                     <pre style="margin: 20px 0px 10px 45px ;" class="small-box-3" >     |  All                                 79$</pre>
+                                    </div>
+
+                <div class="slide">
+                    <img src="https://s3-alpha-sig.figma.com/img/09e3/19b6/953235d5f89077891d33dd160d7306ec?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jXuONBXBrcSuLFsRz8T2~mKk7g82idCL5TIZls3Gc8o-OMbkrMr64ti0I08Tl3eJvjX85EHwTpGz546obt~7wSRRq22RI6Cx~Mz0FMrvMEHIeRnIUrxhojI5QAT56qokQInZ-EcClsA7WVTsAOCdxxbTbrKbuS2vK0y~Ids3WRQUminGdmDd6xi-kFbVPaGLXJOp4-FCekNK3Y7hSibX4j-8-VhT5rR-cvpB3rWnxUffgu6ti8p1KNhhasGc3109VR227m0kf4GXQKNZqkBx~TTr-ZeRWAF~4RbX-DtCsuIW3MRjNK~4RpZGKTBV1AgcsHLWcusqm5LpzAbtDJAjhQ__" alt="Image 4">
+                    <p>Blaus</p>
+                    <h3>BARDOT</h3>
+                    <pre style="margin: 20px 0px 10px 45px ;" class="small-box-3" >     |   S M                                199$</pre>
+                    
+                </div>
+
+                <div class="slide">
+                    <img src="https://s3-alpha-sig.figma.com/img/41ab/74fe/9009c739a0287582a6ca9b51f9b91aa9?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zm-GPgZhbyB85qsFzWXIIuLaxyD6p4DOkv-N5nMhf8TQnwDoFpXVnlHXoHPal4eGM4z1jjwKiGvMttHY9iiAsRuePDMQDFzijONsCrS1lvXbAxwxTT0~k2JJXeQWIVOj7h6TMrB0nSbxt4Hxl78vlrViQ63kizYryXxRwqAak3Kwmc0ANNiR5W6KbDvxn6tpWj3K-v622ae~tm07dvu7dz--ub9XA2bu4qjig7l2yDnn03EkPfKvS-mVA4duC~JTaQlYoJpl75M-C9qYTbkqh7MN8~Qzqo4GWVMuETIQR1HlLzn46BeRRyRCiJmSq-E384cXXrDipVXsUXWcvXKSeg__" alt="Image 5">
+                    <p>Pents</p>
+                    <h3>MARCIANO</h3>
+                    <pre style="margin: 20px 0px 10px 45px ;" class="small-box-2" >     |  S     M                             199$</pre>
+                    
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+</div>
+
+
+</div>    
+
+<hr class="hrr">
+</div>
+
+<div class="Sixth-last">
+    <div class="sixth-last-first">
+
+
+        <h1>
+        IDEAS FOR <u  style=" font-family: 'Architects Daughter', cursive;">POOL</u><br>
+        <u  style=" font-family: 'Architects Daughter', cursive;">PARTY</u> STYLISH<br> FUN
+        </h1>
+    <div >
+        <div class="">
+          <pre>Cotton Shirt  Jacket   Jeans  Shoes                <b> Pull&Bear</b>     ~239$</p>
+        </div>
+        <hr>
+        <div class="">
+          <pre>Dress    Shoes      Glasses                            <b>Zara</b>     ~199$</pre>
+        </div>
+        <button class="box-second-last-div-1-1-button" style="background-color:rgb(161, 155, 155); color:black">
+            Show all Collections →
+        </button>
+
+    </div>
+</div>
+    <div class="sixth-last-second">
+      <!-- Image 1 -->
+      <div class="sixth-last-second-1">
+        <div >
+          <p>In a bright maxi dress</p>
+          <h2>STYLE TO THE<br> MAXIMUM</h2>
+          <a href="#">LOOK →</a>
+        </div>
+      </div>
+  
+      <!-- Image 2 -->
+      <div class="sixth-last-second-2">
+       
+        <div>
+          <p>Fresh total look</p>
+          <h2>GIRL IN WHITE</h2>
+          <a href="#">LOOK →</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<hr class="hrr">
+
+<div class="Fifth-last">
+    <div class="fifth-last-1">
+        <h1>DRESS</h1>
+        <button class="box-second-last-div-1-1-button" style="background-color:rgb(161, 155, 155); color:black">
+            Shop Now →
+        </button>
+    </div>
+    <div class="fifth-last-2">
+        <div class="fifth-last-2-4 "><img class="x" src="https://s3-alpha-sig.figma.com/img/3a4a/dbbc/94cceb040ccb1f5953d4a163b32d906b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lYfPULwxtkSwg0cPS9Cq3YQbp2diweAw7hORjeThJ6UQLNh6mIMJtnTZ9IXPiJD9CByX6FMdtGKjfFX30P1PbyBUaWSN3PR-wKyZt5ZIRfXS-g9Pja1~wQx5rGvYeernTSUOfhyhANddGBE9avqxSjjY6ZlydJvC6LC~6-uCRIlkbKiZR~qkSBirgRq7wMIbcyAIEN12gaiZYY5u46V-QtGXz6nEPV2TM932t61Nf8lku~y0hjlu4YPIaf8imtD7UWbGWgbyjpQ2tXliFStgYyo7LUMd6rSm2Y9gXUHgxEgXRVatFg9-MSZZGN1Yvh690OOjjieJz4LCQYIRFedGpw__" alt="">
+        <p>Essential dress
+        </p>
+        <h2 style="margin-top: 10px;">MEDICINE</h2>
+        <pre style="margin: 20px 0px 10px 5px ;" class="small-box" >     |  All                        230$</pre>
+        <!-- <P class="small-box"></P> -->
+        </div>
+        <div class="fifth-last-2-4 "><img class="x" src="https://s3-alpha-sig.figma.com/img/3232/c74e/dc30490d688c8e7ca2d323486f5594ca?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iUrkxXcpQ1bWjY3ErqFhd2dQnw5Ow13V4F1ZGvYcRBl-Gs7VEwtOdIzmnAYnLjZKu5ziD-w7E64vPGoAvXfU38U5yMFR7aQr1rXMvmjzjOar1OXMnT2RVSCqTc25PLE34AqSDy7JbjhP3uCarUNL89T2pxLlrkxjywbQu3SUlnh6SmdPFXRVo~cVHMqNCzVgks-QcWNqY80fRXI7pMBn7GxQjapqF6g9~5XQKsgFn8h6xleEDNl8bd90kqL8pPjvGLa7-p0nhpUZxshf3v2EGI2d~GT75J3Pgqw-RKZFPsn1S1VEzOMbPU2mA5ZlKdUI9S1gUUmp8C-S24-bXRDAHg__" alt="">
+            <p>Dress
+            </p>
+            <h2 style="margin-top:10px">VERO MODA</h2>
+            <pre style="margin: 20px 0px 10px 5px ;" class="small-box" >      |    XS S M                 89$</pre></div>
+        <div class="fifth-last-2-4 "><img class="x" src="https://s3-alpha-sig.figma.com/img/edef/a117/3ea424323dc7dafec68eb304a7455aa5?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O-RL9fahus5yXG902u2wXfGrpNbIZoXvTIdNF9dVI-Pm~GtdVDjDXSK8ulEAGzyrd5AKxNpgLSteb5mN8TNWadveNAK9teiHR7gvxMPr-zou7PS8EiEWT7u29xExJrvdO6lqgX6t1KvNfT~63Ep4U8MjFq20eqZ0FgfrL2R-wYFrAVGzaqh13eecjaOaFUz4a5lSEM12lJcqkS5hKE6b3be0krBVnIE3NraLKXzYSob0wEpXStHgrKndRQOnpIWdFkBVBYRxVULxBJXEMDKbALg-Y8TX6H3ValKLwIW~Sl~qvP9moH4oFESqobwkSwR8TwZq4FsSAWi-eDPb5fRjiw__" alt="">
+            <p>Glasses
+            </p>
+            <h2 style="margin-top:10px">BALMAIN</h2>
+            <pre style="margin: 20px 0px 10px 5px ;" class="small-box" >     |  All                         39$</pre></div>
+        <div class="fifth-last-2-4 ">
+            <div class="a"><h2>SHOW ALL DRESSES</h2>
+                <button class="box-second-last-div-1-1-button">
+                    Shop Now →
+                </button>
+            </div>
+            <div class="z"><img class="y" src="https://s3-alpha-sig.figma.com/img/b10a/554c/29768241f77e9b6c54ae792dab2f81cd?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XqldZbbXYeQosWGq3cZvw-Xd0vZEPYvrOxBW6fCPELW2Cba96qMyOcrcuBKyKKqe8t9L3wH1Tuv7UsNdFGBMrv3SXFD5jQv7vxbNF1ZRzRuL~N8-VwQeec9xHe6n49gH~E0II9yrhwXQVh9NUXfJHTkJ3JS0pbFaiykwa9eFMjECLGbF5p8jW-U7brXbhADpIewCPkLSYVsiY~H3SbG9T53ivVS8SBKNPa7~2ml~fzI84PzpR8bO6a4c41v4ySuHIUghT2XIHYTfhCNrR4xa6DDFQfobuz~M2bWL~aMH8YWf8Ct1HJt~w1AB82HKdMejT57YRGoFvyg35VGV0iRW0g__" alt="">
+            <img class="y" src="https://s3-alpha-sig.figma.com/img/6c6d/9098/1d89223aad3cf1dca383fed0308fb60c?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QCobAcuRuCXSMp0SeWXgRGHcOcZBdpWTBmRHzgCOqDt-OrXKvRrZ~71Ju-3uMXcR2Cx6JusOC5ukGAJUCV8f2OTyBdejb4DpE-ZY5EjmKpbay4p5EyW~396UyY1OyQEIIcbWJqO~~PVNHxZrA3YINKZNJzvcTOIHA4IbLANknxbWUDnZ76QFc6n0hr35EQJJ7q02C8Wghgi2cTjR6u7vAOBAQRpKw5vjcdeV52JteXrf0z5I53ZG0hyllOYzfB67t0UOTKt9CZbyvcxcgENRe4eEhS8lihAvnMjWuKZVDb9jxII0riIwO-ksTu2YiK1Y~3CpYiSdLWcm0IOlbK6pcA__" alt="">
+        </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="Fourth-last">
+<div class="fourth-last-1">
+<div class="play-button">
+    <div class="triangle"></div>
+</div>
+</div>
+
+<div class="fourth-last-2"> <h1>SUMMER PARTY <br> POP-UP STORE</h1>
+
+<P>Everything you need to get togather </P>
+<p>for a summer party </p>
+<button class="box-second-last-div-1-1-button" style="background-color: WHITE; COLOR:BLACK">
+VIEW ALL COLLECIONS →
+</button>
+</div>
+</div>
+<div class="container">
+
+
+<div class="third-last-box">
+    <div class="third-last-slider-container">
+        <div class="slider-wrapper" id="sliderWrapper">
+            <!-- Image Slider -->
+            <div class="slide">
+                <img src="https://s3-alpha-sig.figma.com/img/46a1/36b8/01a8957f5eeaa55ee22de96eb014a46f?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M1w213w1DsKgawIxywzsPXB2y2W~0l7TVqZt3iedZ4oAKolFKRRoOwQW-cGerUtt5fHfZ5ZhOnJqOyKOkcwo-ibVQtzwdoZ7hfpx86ch05A9AT9qwBahPTTs4X8yyyzy2dmjtGXDZdfsn1PgLkahO8Oc~Zkkd9lvAxDUEkR3AyW2m0w9F2gTQ4ThLJKzfHPVkJc4BjreFUdu6JjI3rm85PwEE30VcTzoUJNyl9kr8B~Gst58m9Wfb0WEX3eEt4AiRyOBUia4rm91uCH5AQ5UA2-ouP65fXj8FH0xuvBj4QVv6B-whKonRJgH2nue9PYypIGOjZTjqW3DZbY4ptI00Q__" alt="Image 1">
+                <p>Dress0</p>
+                <h3>SAMSOE SAMSOE</h3>
+                <pre style="margin: 20px 0px 10px 45px ;" class="small-box" >     |  All                     230$</pre>
+                
+            </div>
+
+            <div class="slide">
+                <img src="https://s3-alpha-sig.figma.com/img/0c73/3b26/09af96bb6f57405efd1f7849b9dcb46c?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YKuvBrlklzprQSoQkZtQoEcDngconpeq8LvyR9l7ml5b957ydg~e2wLHQvhiWNQFB7iyZ7YBjbsgH54z3ZWLHq6cBywvCw6rJM94DRyxtiPgVs9~VfFIpLXrXMuVPysNrd7wrtJXw-UXFt2WlNzL-KxPkQ94gpge4HYkz0uJ3Kzmkg4ky8PmMTGacUI0vx3q4YpPgrI3hussEo7ByDXcMhvuHPtvuDF2Sid1ikvwaEkwZLjAYUxzc1QWOuVnzEAdgfbQMqPsZrZ0fUOgo1LTYPiGBO2v~PibjnVR1fADEb9d9eCEbdYt8EqgAoGjaQo2IfaTH6kdyv2~jGTLL96Bug__" alt="Image 2">
+                <p>Dress</p>
+                <h3>MIX SIXETY</h3>
+                <pre style="margin: 20px 0px 10px 45px ;" class="small-box" >     |  38 39 40                     289$</pre>
+                
+            </div>
+
+            <div class="slide">
+                <img src="https://s3-alpha-sig.figma.com/img/575c/19fe/e2fd8cbe1562b9c6c971eda94f46dab6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M6OWZteGsr3koN53zB12p4l~MNPKAIB8tR7CMObZM8pObpahDZWpD6bEkQlF1kfpjBi5sILivqktnYcHVJFEogNFkiV6c6oefAPxPhS-uYNGYcj5inHVszp5YkRtu1u~qoXS2QVUMOyUhl8tRvSqngGwRjW6i4G-5Mr~pwj3XVrd7yDEeCP0jIfprK4kxmGHu7aH1CNrgHkJIRLplI3WDXGY5djsC1eDBkNGyl5mLiVIq8LJ3fXTFSshyIBeZwLW0QpQgUXO1~1N4Kj9x~B1u-0dntbDKdX6wsmTmJi8hjTFQORuhB5Eh6RwbOUvfSZ5w6lz-SDz4slIoeMHECsm6Q__" alt="Image 3">
+                <p>Leather sendals ITALIA</p>
+                <h3>MANGO</h3>
+                
+                 <pre style="margin: 20px 0px 10px 45px ;" class="small-box" >     |  All                 79$</pre>
+                                </div>
+
+            <div class="slide">
+                <img src="https://s3-alpha-sig.figma.com/img/2243/1d34/f05abade0aaa880bf198883efae66b15?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YAQXEgMtaC~aGterI2bxFtGq3Ih9UEY9io-T2VdDyMBHYEqYFvPg4SzFQ7KnilOg9a-Fg0LHwR8rmpFqVX3v1Ou1IULtFTpoD9PcCNMYn0YG9VbCMbe2h6esDOXDG~9zRw372VJPX5M7HCrm668JUYFZskqu~Ub1i3oVMfGJU307cL26t5Y1JaOSjNFnU0tTLx~D0iQURB949z9Iz7jqYcQyLvUznfs2fn4-htQxXk0QDvSc7dXu-T3~ycvKpuPoUdaCzY~oCWTxzTNtjmewY8I3VEm2fJHdJ7ZCvnRI3i9MKwNoij-DQJYCAR9DFpIv~JVqfc90rzRfJAbYFOFg3Q__" alt="Image 4">
+                <p>Blaus</p>
+                <h3>BARDOT</h3>
+                <pre style="margin: 20px 0px 10px 45px ;" class="small-box" >     |   S M                     199$</pre>
+                
+            </div>
+
+            <div class="slide">
+                <img src="https://s3-alpha-sig.figma.com/img/02ac/fc0f/9e756eed56139c2487b0434e18810df2?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TFMQsQWWZqzaQHNPjqTj8qvfFPGDcGCyd948ak6qMrT8URFqj8JvS5O-VUI1YXW4MXaI6TYQkXBYlgBw0sZ4efs2Ab4ukmFjckhKLqVof0XZB4rdgybV~nvdzUL5UkWKoY02DO7ST6pQJ59mtLQZpwYblCrox5sf7cNyibGq3f7yWDTPR9-S-wYzcrBy~6MyHf7TL~qhmDDjtP19EEqX1PHGMs7xAfQ49xHVOBuYQ4DBPAtw1Eo~bA5BrWsN3RP9SfKJpp6aqLL43pUk6FMmzhaIk1CED4Lu8rBlz1Uqb7PBUgebV9Yiy-GgW6Em4Dq3fNGUBAB6Yf53AH0c3UMEsA__" alt="Image 5">
+                <p>Pents</p>
+                <h3>MARCIANO</h3>
+                <pre style="margin: 20px 0px 10px 45px ;" class="small-box" >     |  S     M                     199$</pre>
+                
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+</div>
+
+<div class="box-second-last">
+
+    <div class="box-second-last-div-1">
+
+        <div class="box-second-last-div-1-1 ">
+
+            <h1>MATCH <u style=" font-family: 'Architects Daughter', cursive;"> SPORTY</u> <br ><u style=" font-family: 'Architects Daughter', cursive;"> AESTHETICS</u> <b class="box-second-last-div-1-1-button">-35%</b> </h1>
+            <div class="second-last-text">
+                <p>Running shoes for a walk around the city or
+                    bicycles to the office? Why not! Our stylists
+                    offer not to be afraid to mix sports things
+                    with everyday ones.</p>
+            </div>
+
+            <button class="box-second-last-div-1-1-button">
+                Shop Now →
+            </button>
+        </div>
+        <div class="box-second-last-div-1-2">
+
+
+        </div>
+    </div>
+    <div class="box-second-last-div-2">
+        <div class="box-second-last-div-2-2">
+            <img src="https://s3-alpha-sig.figma.com/img/656a/66a3/5b504a5eedbfa0ecfcae63706fdd173e?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mcTzh3N2pxMpymSxzjVLylXAlPjiaaxlekTsJdDlQNc-mbiqaslJ7VrpN2DZdTr4KPARSs27rSHuu6-w6c7y2Uq9I0cg2RL~8e1tD-oWQUyPX5fyHCnUSJ1hNvC3xCP1XgSJVEwErEne3kQAA2lq00LWVoVnAVZ2uCfpsZZYzZCJF2FVRKQKG1wLaUCUYJv1PWFRq4RFlDc-BdphjAk9lFtzEbcN-KhuWK8njzz1~zF71JSSJ6bvZLgs18zmWe9mOevGGFWNvcIttlJlqtRi34YOAZpU-uQelQbbX7YVEq38OBBzVyuWbKE8HF1S8aIchMIs0VimF09v911aA~BUTA__"
+                alt="">
+            <p>Shoes</p>
+            <h3>REEBOK- ZIG KINETIKA ||</h3>
+            <div class="second-last-box-smallbox-com">
+                <div class="second-last-box-smallbox-com">
+
+                    <div class="small-box">
+
+                    </div>
+                    <pre>|  38 39 40</pre>
+                </div>
+                <div class="second-last-box-smallbox-price">
+
+                    <h4>229$</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-second-last-div-2-2">
+            <img src="https://s3-alpha-sig.figma.com/img/7232/039b/5a980ad80353354fcf1a48bd20cb156e?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ET0LrmRwBEQ~VSLIdeMVOBef4g-vlVMcLWbGZ-9kwL8z43PC-nCjVugbhp1VrQ6vx5ujWiKXZfV8xa5ZeZbyTsYDZ3YLk~uMZMvzTr3winKt2tHPfFf1OJ8pKkmlaJWw~P83lgtBt6A8REVL2KQcnNjMiWBZQszvDnR1-OIg6zaz5~KFVmhH6884-ok9Vlj4iwU5Cg4xMhRoE~R5zcGJq6r2NxetspDjhtNtVmWAxu526idXCesX9EhaYBFo~JHbP1KT4~fArivmi52rM41nRhSQtjrsI5ESo21aCkAhAnq6QDYXk3CgLvFBTB-gL8HK-oxb-RP6BKVHwlPnZPwl9w__"
+                alt="">
+            <p>Shirt</p>
+            <h3>MANGO - BISTA</h3>
+            <div class="second-last-box-smallbox-com">
+                <div class="second-last-box-smallbox-com">
+
+                    <div class="small-box">
+
+                    </div>
+                    <pre>|  All</pre>
+                </div>
+                <div class="second-last-box-smallbox-price">
+
+                    <h4>199$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="box-second-last-div-2-2">
+            <img src="https://s3-alpha-sig.figma.com/img/b4d8/4679/36740bd743fabe4b02db80b297551ea2?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EJItn5E6mgol5MHh1N7W9pP24njGvTvEcFyh~UL0BbIFoEyEIeFNGFCZ7KaxAG4uSBqgYfi7CLnQFFbtC68MTmQh3cOFiZPyArhrPHXLNbiA33aIe8Xx7nGpQ-Pso4jMoJRKy-vadCIotb3S5hLlGJbN-qv9f8bj4I5OBRG-m7gRT25jWYurR6-rNP7aQETq31~ughDqQiLbQdsrWxZ9~K7XNV1qEeZ0Rkon8v7EDZAAnHodi-T1GGtG-jcRQAlcWxrTg6w0moem2yYoy-MKSYrf4i7qKeDdRL92pZGZutwK~fw7PMzZWy2jn8mko0AwTBoDE5A7MJlITECuRhABvw__"
+                alt="">
+            <p>Sports</p>
+            <h3>MANGO - SPORTY</h3>
+            <div class="second-last-box-smallbox-com">
+                <div class="second-last-box-smallbox-com">
+
+                    <div class="small-box">
+
+                    </div>
+                    <pre>|   All</pre>
+                </div>
+                <div class="second-last-box-smallbox-price">
+
+                    <h4>39$</h4>
+                </div>
+            </div>
+        </div>
+        <div class="box-second-last-div-2-2">
+            <img src="https://s3-alpha-sig.figma.com/img/301f/0a9a/a1eaacacab3539dc948ac77c48dd8f32?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YddoaCBXVCTJxL2fsarF4~DxIhNtVAdXWBVP6tWqCdEAVeV-6Avlnx-AgMDTnuwuJxK~J4ShiSr60XiABHq8PwDNFLBio94diCL~fZdf7nhjleceaYteR1iTfPprRUpQ84NHMB6AHKCMza3zLlN0ie-IqH8YyLak4tp66W2FLrx5PhGBwQayeUU76J9EFdiWC~433Y-ufxh6VIXhtXhNb5tZzAei5j8LmXqHoZMYMbapL2yj9i63t3Aluw1Fl6xFESPK4b0JYdOmp9KYWUSPC67~-mg0oVKLNscZbm11TEnmb12u7qzAnvYjxFYEr7W-pzxw4E0W~MQd9JJ1sso7Pg__"
+                alt="">
+            <p>Shoes</p>
+            <h3>Sports Bra</h3>
+            <div class="second-last-box-smallbox-com">
+                <div class="second-last-box-smallbox-com">
+
+                    <div class="small-box">
+
+                    </div>
+                    <pre>|  All</pre>
+                </div>
+                <div class="second-last-box-smallbox-price">
+
+                    <h4>18$</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<style>
+   
+    
+    /* First-box */
+    .first-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 450px;
+        width: 1400px;
+        margin: 0px auto;
+        background-image: url('df71e406c99fc2a8fdd78cdc54a5c46f.jpeg');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .first-box-1 {
+        flex: 1;
+        height: 100%;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+       
+         /* Add a semi-transparent background */
+    }
+    
+    .first-box-2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    
+    .first-image {
+        height: 500px;
+        width: 700px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .first-box-2 h1 {
+        margin: 0;
+        color: #333;
+        font-size: 2rem;
+    }
+    .pre{
+        margin: 30px;
+    }
+    
+    
+    
+    
+    /* Company Logos  */
+    .collab-company {
+        justify-content: center;
+        height: 100px;
+        
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Space between each logo */
+        
+        background-color: #fff; /* Optional: Adjust background color */
+      }
+      
+      .logo {
+        height: 60px; 
+        object-fit: contain;
+      }
+      
+      .extra-logos {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Sixth Last Box  */
+    
+    .hrr{
+        margin: 0px 0px 0px 0px;
+    }
+    .Sixth-last
+    {
+        margin: 30px 140px 100px 140px;
+        height: 500px;
+        width: 1400px;
+      
+        display: flex;
+    }
+    
+    
+    .sixth-last-first{
+       margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        width:650px;
+        height: 500px;
+        
+    }
+    .sixth-last-second{
+        display: flex;
+    }
+    .sixth-last-second-1{
+        height: 500px;
+        width: 400px;
+        background-image: url('https://s3-alpha-sig.figma.com/img/ad7c/44f1/cd4f20928c9e372fe6771bb5435e9f53?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AwPTm1mjNxH7Yq1S0XAdozh301qDTMhD4FauheyDUeD4rIuJJKit44~TOemW6e9G2DaGvDn0CUVs3so~OITuBa8gQ3maBrYQ3qxzS-fKNM-WyuujkHb4aa2jBpfl6tqidEX0U7fh0mvFq7ZLDAWm2fEIi3LlY~fp~7Z4kwUfUzb7xe3iN6O6RGSBi8Wn2LZ1CGeyj8b-dyRpXAE7TPM1IcdOIUyEcuLyOwPFCvaBpze0Lve0CPYx3Vok41TN0T7jjcUPnWKIMFM56g8fVIKxkEcN1ObcTbEoPyQ9OhAvj8MwDSUhedsPUnh5W0x4psrUPpxZCtSbT9GpepfWuVWohQ__');
+        background-size: cover;
+        color: white;
+        text-align: center;
+        align-content: center;
+    }
+    .sixth-last-second-2{
+        
+        height: 500px;
+        width: 400px;
+        background-image:url('https://s3-alpha-sig.figma.com/img/ae8d/4060/ffe8dd9578d71ad5a1266920f32ff39b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OtuHdPD12rEUXGksbbBnUhgNQRN9j5qKzEVNeZMaoVj6dHG7Jz5RDG8NhOKjeUSQOfl5CMytr2OIDK6bnt0DLLpjjWKWSjmYNg4qt-bdk5RcQnsdy6I~WfmJWoFAIdejxWBBlQkcpAiGipY7JIIdUDq10P7sc1gk-ze50xKe13MaMB5aLIopLi003HcrRWloNvMHFo8tBQnsOnfY2pcIkxe7toVn98EMnh05dGbFWt6NCgIJ9kkAkjFOkkejHeRnJUwy0pYckDIZYxHKzFKIWOoei5ExQWznOKvzelTAmbP9sTd-3P4CyB8d0D-HVHm8QCcRvjDLuCQUU7YrKM1OvQ__');
+        background-size: cover;
+        color: white;
+        text-align: center;
+        align-content:center ;
+        
+    }
+    
+    
+    .ar{
+        margin-top: 30px;
+        display: flex;
+    
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Fifth Last Box */
+    .Fifth-last{
+        margin: 0px 130px 130px 130px;
+        height: 550px;
+        width: 1400px;
+        
+    }
+    .fifth-last-1{
+        display: flex;
+       
+    
+    }
+    .fifth-last-1 h1{
+        margin :55px 55px 20px 55px ;
+    }
+    .fifth-last-2{
+        display: flex;
+    }
+    .fifth-last-2-4{
+        margin: 20px;
+        height:450px;
+        width: 320px;
+      
+    }
+    .x{
+    
+        height: 349px;
+        width:319px;
+        
+    }
+    .y{
+        height: 200px;
+        width: 140px;
+        
+    }
+    .z{
+        display: flex;
+        
+    }
+    .a{
+        height: 230px;
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+        
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px 10px;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Fouth Last Box */
+    
+    .Fourth-last{
+        height: 500px;
+        margin: 50px 10px 50px 120px;
+        width: 1400px;
+        background-image: url('static/images/Screenshot 2025-01-04 142717.png');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    
+    .fourth-last-2{
+        padding-top: 20px;
+        height: 48%;
+        width: 48%;
+        
+        color: white;
+    }
+    .fourth-last-1{
+        height: 48%;
+        width: 48%;
+        display: flex;
+       
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+       
+    }
+    
+    .play-button {
+        margin-left: 200px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 20px solid #000;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        margin-left: 8px; /* Adjust to center the triangle visually */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Third Last Box  */
+    
+    
+    .third-last-slider-container {
+        display: flex;
+        text-align: center;
+        height: 600px;
+        margin: 0px 0px 0px 0px ;
+        align-items: center; /* Centering the slider */
+        position: relative;
+        width: 100%;
+        max-width: 1500px;
+        overflow: hidden;
+        background-color: WHITE;
+        
+    }
+    
+    .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 25%; /* Show 4 images at a time */
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 5px 2px rgb(194, 187, 187) ;
+    
+    
+    }
+    
+    .slide img {
+        width: 250px;
+        height: 400px;
+        border: 2px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Navigation buttons */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 10;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .third-last-slider-container {
+            height: 500px;
+        }
+    
+        .slide img {
+            width: 200px;
+            height: 350px;
+        }
+    
+        .prev, .next {
+            font-size: 20px;
+            padding: 8px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .third-last-slider-container {
+            height: 400px;
+            margin: 80px auto;
+        }
+    
+        .slide img {
+            width: 150px;
+            height: 300px;
+        }
+    
+        .prev, .next {
+            font-size: 18px;
+            padding: 6px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .third-last-slider-container {
+            height: 300px;
+            margin: 60px auto;
+            width: 90%; /* Reduce width for smaller screens */
+        }
+    
+        .slide {
+            min-width: 50%; /* Show 2 images at a time */
+        }
+    
+        .slide img {
+            width: 120px;
+            height: 200px;
+        }
+    
+        .prev, .next {
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Second Last Box  */
+    .box-second-last{
+        background-color:#eee9dc;
+        height:800px;
+        width: 1400px;
+        margin: 30px 0px 0px 140px ;
+        border: 2px solid #eee9dc;
+        border-radius: 30px ;
+        
+    }
+    .box-second-last-div-1{
+        height: 300px;
+        display: flex;
+        padding: 20px;
+        
+    }
+    .box-second-last-div-1-1{
+        height: 280px;
+        width: 650px;
+        padding: 20px;
+        
+        
+        
+    }
+    .box-second-last-div-1-2{
+        height: 280px;
+        width: 650px;
+        padding: 20px;
+        background-image: url("Screenshot 2025-01-05 095635.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        box-shadow: offset-x offset-y blur-radius spread-radius color;
+    
+    
+        
+    }
+    .box-second-last-div-1-1-button{
+        height: 40px; /* Sets the button's height to 40 pixels. */
+        font-size: 26px; /* Sets the font size of the button's text. */
+        font-weight: bold; /* Makes the text bold. */
+        border-radius: 20px; /* Rounds the button's corners with a 20px radius. */
+        cursor: pointer; /* Changes the mouse cursor to a pointer (hand) when hovering over the button. */
+        padding: 0 20px; /* Adds padding inside the button (0px top/bottom and 20px left/right). */
+        background-color: #622662; /* Sets the background color of the button. */
+        color: white; /* Sets the text color to white. */
+        border: none; /* Removes the button's border. */
+        margin-top:50px;
+    
+        
+    }
+    
+    .second-last-text{
+        height: 30px;
+        width:400px;
+    }
+    .box-second-last-div-2{
+        height: 300px;
+        display: flex;
+        
+    }
+    
+    .box-second-last-div-2-2 {
+        margin: 20px 50px 0px 50px;
+        height: 310px;
+        width: 250px;
+        background-color: green;
+    }
+    .box-second-last-div-2-2 img{
+        height: 310px;
+        width: 250px;
+       
+    }
+    .small-box-1{
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+        margin-right: 10px;
+        background-color: red;
+    }
+    .small-box-2{
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+        margin-right: 10px;
+        background-color:green;
+    }
+    .small-box-3{
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+        margin-right: 10px;
+        background-color: rgb(70, 68, 68);
+    }
+    .second-last-box-smallbox-com{
+        margin-top: 10px;
+        display: flex;
+    }
+    .second-last-box-smallbox-price{
+        margin-top: 10px;
+        justify-content: end;
+    }
+    
+    /* Responsive Design: Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .box-second-last-div-1 {
+            flex-direction: column; /* Stack the content vertically on smaller screens */
+        }
+    
+        .box-second-last-div-1-1,
+        .box-second-last-div-1-2 {
+            width: 100%; /* Full width for each column */
+            max-width: none; /* Remove max-width restriction */
+        }
+    
+        .second-last-text {
+            width: 100%; /* Ensure the text box takes full width */
+            max-width: none; /* Remove max-width restriction */
+        }
+    
+        .box-second-last-div-2 {
+            flex-direction: column; /* Stack the second section vertically */
+        }
+    
+        .box-second-last-div-2-2 {
+            width: 100%; /* Full width on small screens */
+            max-width: none; /* Remove max-width restriction */
+            margin: 10px 0; /* Add space between the boxes */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .box-second-last {
+            width: 100%; /* Take full width on very small screens */
+            height: auto; /* Adjust height for better layout */
+        }
+    
+        .box-second-last-div-1-1-button {
+            width: 100%; /* Make button full-width on small screens */
+            padding: 10px; /* Adjust padding for small screens */
+        }
+    
+        .small-box {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    
+
+
+</style>  
+{% endblock content %}
+
+
+{% block footer %}
+
+<div style="margin:60px 100px 0px 100px;  display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: #ffffff;">
+    <!-- Image Section -->
+    <div style="width: 48%;">
+        <img src="https://s3-alpha-sig.figma.com/img/6efe/678f/5e0ee5fc54c5f828b751ef151353a6f5?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cgT4W27MpVzRu3egFvdahfPfdVoTa5jzHnku~SR-gXypKq7XOGtM0cOBJEJwM6bMJ2-ZLB5GuInic998XxczCuGeLy1sHn~P3Ovfr9GsG5cEfK4mXg6b8ClEuhz-2Mg9pWgBEwoA578-KZIulUAc9kmvYwQ~AzLa-yWwKDXZ~kDxxCoo7wLD3gUzzgfZbHpuL08xKN81HG-ia0117CXGxQZ4sHt3tM4Mg6MCKCCKJFx549WCYHnwTVGB0eHMD6nPl0ps7iw4ZywTjYtnxg4navygzdntCG9mXjOzNAONFM75gPit23tzyoOEK2pGv4XoyLmakBhM-OJ4FM~FrKR7wA__" 
+            style="width: 100%; height: auto; margin: 10px; border-radius: 10px;" alt="Offer Image">
+    </div>
+
+    <!-- Subscription Section -->
+    <div style="width: 48%; text-align: center;">
+        <h4 style="height: 40px; display: flex; align-items: center; justify-content: center; border: 2px solid Green; border-radius: 5px; margin: 20px auto; width: fit-content; padding: 0 10px; font-size: 18px; background-color: #ffe8e8;">
+            <i class="fa-solid fa-gift" style="color: Green; margin-right: 10px;"></i> Get -10% on any order
+        </h4>
+        <h3 style="margin: 10px 0; font-size: 24px;">ON YOUR FIRST PURCHASE <br> BY SUBSCRIPTION</h3>
+        <div>
+            <form action="" method="POST">
+                <input type="email" style="margin: 10px 0; height: 40px; width: 70%; font-size: larger; border: 2px solid #ccc; padding: 5px; border-radius: 5px;" placeholder="Your E-Mail" required>
+                <button style="height: 40px; background-color: #ff5252; color: white; border: none; border-radius: 5px; font-size: larger; padding: 0 20px; cursor: pointer;" type="submit">
+                    <b>Subscribe</b> →
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div style="margin: 0px 100px 0px 100px;display: flex;  justify-content:center; background-color:white">
+    <div style="width: 48%; display: flex; flex-direction: column; justify-content: space-between;">
+<div style="text-align: center;">
+    <h1><b>BESART</b></h1>
+    
+    <div class="social-icons" style="margin-top: 20px;">
+        <a href="#" style="margin: 10px; height:20px; width:20px;"><i class="fab fa-facebook"></i></a>
+        <a href="#" style="margin: 10px; height:20px; width:20px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="margin: 10px; height:20px; width:20px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="margin: 10px; height:20px; width:20px;"><i class="fab fa-pinterest"></i></a>
+    </div>
+</div>
+
+<pre style="margin: 0; text-align: center;">
+    <b>EN</b>    <a href="#" style="text-decoration: none; color:black;">TERMS & CONDITIONS</a>   <a style="text-decoration: none; color:black;" href="#" >PRIVACY POLICY</a>
+</pre>
+</div>
+
+
+    <!-- Subscription Section -->
+    <div style="width: 48%; text-align: center;">
+        <div class="footer-container">
+            <!-- Help and Info Section -->
+            <div class="footer-column">
+                <h3>Help and Info</h3>
+                <ul>
+                    <li><a href="#">Returns and Complaints</a></li>
+                    <li><a href="#">Delivery & Payment</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Cooperation Section -->
+            <div class="footer-column">
+                <h3>Cooperation</h3>
+                <ul>
+                    <li><a href="#">Brand Files</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">About Besart</a></li>
+                </ul>
+            </div>
+            <!-- Download Section -->
+            <div class="footer-column">
+                <h3>Download</h3>
+                <a href="#" class="app-button apple">Download on the Apple Store</a>
+                <a href="#" class="app-button google">Get it on Google Play</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with loooove <br> SCOTTY LAUREN</p>
+        </div>
+    </div>
+</div>
+
+</div>
+</footer>
+<style>
+    
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer Columns */
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* App Buttons */
+.app-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 80%;
+}
+
+.apple {
+    background-color: #0a0a0a;
+}
+
+.google {
+    background-color: #5c2e91;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: right;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #888;
+}
+
+
+
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+{% endblock footer %}
+

@@ -1,0 +1,47 @@
+{% extends 'Base.html' %}
+
+{% block title %}Your Cart{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Your Cart</h1>
+        
+        {% if cart_items %}
+        <form method="POST">
+            {% csrf_token %}
+            <ul class="list-group">
+                {% for item in cart_items %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row w-100">
+                        <div class="col-md-2">
+                            <img src="{{ item.clothing_item.photo.url }}" alt="{{ item.clothing_item.name }}" class="img-fluid" style="max-width: 100px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>{{ item.clothing_item.name }}</h5>
+                            <p>Price: ${{ item.clothing_item.price }}</p>
+                            <p>Gender: {{ item.clothing_item.get_gender_display }}</p>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="quantity_{{ item.id }}">Quantity:</label>
+                            <input type="number" name="quantity" id="quantity_{{ item.id }}" value="{{ item.quantity }}" min="1" class="form-control">
+                            <input type="hidden" name="cart_item_id" value="{{ item.id }}">
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-end">
+                            <button type="submit" name="update_quantity" class="btn btn-primary mr-2">Update</button>
+                            <button type="submit" name="delete_item" class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <span class="badge badge-primary badge-pill">${{ item.total_price }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            
+            <h3 class="mt-4">Total Price: ${{ total_price }}</h3>
+            
+            <button type="submit" name="checkout" class="btn btn-success mt-4">Proceed to Checkout</button>
+        </form>
+        {% else %}
+        <p>Your cart is empty.</p>
+        {% endif %}
+    </div>
+{% endblock %}

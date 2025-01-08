@@ -1,0 +1,47 @@
+{% extends "Base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="container rg " >
+    <div class="container my-5 col-5 shadow-lg ">
+        <h1 class="mb-4 text-center">Register Yourself</h1>
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="exampleInputEmail1" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="exampleInputEmail1" />
+          </div>
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="passwordInput" />
+          </div>
+          <div class="mb-3">
+            <label for="verifyPasswordInput" class="form-label">Verify Password</label>
+            <input type="password" name="vpassword" class="form-control" id="verifyPasswordInput" />
+          </div>
+          {% if error %}
+          <div class="alert alert-danger" role="alert">
+            {{ error }}
+          </div>
+          {% endif %}
+          <div class="text-center justify-content-center m-3">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+        <p class="text-center">
+            Already have an account? <a href="/accounts/login">Login</a> here.
+          </p>
+      </div>
+<style>
+
+   
+</style>
+
+    
+</div>
+{% endblock content %}
