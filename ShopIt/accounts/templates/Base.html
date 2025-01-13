@@ -149,26 +149,29 @@
           </div>
         </div>
       
-        <!-- Center Section -->
         <div class="box2">
           <h1>BESART</h1>
           <ul class="menu-links">
-            <li><a href="#">NEWS&SALES</a></li>
-            <li><a href="#">CLOTHING</a></li>
-            <li><a href="#">SHOES</a></li>
-            <li><a href="#">ACCESSORIES</a></li>
-            <li><a href="#">BAGS</a></li>
-            <li><a href="#">JEWELRY</a></li>
-            <li><a href="#">BRANDS</a></li>
+            <!-- Uncommented and corrected the commented lines -->
+            <li><a href="{% url 'clothing_list_by_jauners' 'NEWS_SALES' %}">NEWS & SALES</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'CLOTHING' %}">CLOTHING</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'SHOES' %}">SHOES</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'ACCESSORIES' %}">ACCESSORIES</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'BAGS' %}">BAGS</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'JEWELRY' %}">JEWELRY</a></li>
+            <li><a href="{% url 'clothing_list_by_jauners' 'BRANDS' %}">BRANDS</a></li>
             <li><a href="{% url 'clothing_list_by_category' 'F' %}">ALL WOMEN'S</a></li>
           </ul>
         </div>
-      
         <!-- Right Section -->
         <div class="box3">
           <ul class="icon-links">
             <li><a href="#">❤️</a></li>
-            <li><a href="#">👤</a></li>
+            
+              <!-- Other navigation items -->
+              <li><a href="{% url 'paid_item' %}">👤</a></li>
+   
+          
             <li><a href="#">⚙️</a></li>
             <li><div class="cart-container">
                 <a href="{% url 'view_cart' %}">

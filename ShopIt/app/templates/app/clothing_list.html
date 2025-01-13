@@ -1,11 +1,27 @@
 {% extends "Base.html" %}
-{% block title %}View Cloth{% endblock title%}
 
+{% block title %}View Cloth{% endblock title %}
 
 {% block content %}
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Clothing Items</h1>
-       
+        <h1 class="text-center mb-4">{{jauners}} Items</h1>
+        
+      <!-- Toast Notification -->
+
+        <!-- Display Messages -->
+        {% if messages %}
+    <div class="d-flex justify-content-center mt-4">
+        <div class="alert alert-dismissible fade show w-50 text-center alert-custom" role="alert">
+            {% for message in messages %}
+                <div class="mb-2">{{ message }}</div>
+            {% endfor %}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+{% endif %}
+
+
+
         <div class="row">
             {% for item in items %}
             <div class="col-md-4 col-sm-6 col-12">
@@ -18,7 +34,8 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ item.name }}</h5>
                         <p class="card-text">{{ item.description }}</p>
-                        <p class="card-text"><strong>Gender:</strong> {{ item.get_gender_display }}</p>
+                        <p class="card-text">Price :- {{ item.price }}</p>
+                        {% comment %} <p class="card-text"><strong>Gender:</strong> {{ item.get_gender_display }}</p> {% endcomment %}
                         
                         <!-- Add to Cart Button -->
                         <form action="{% url 'add_to_cart' item.id %}" method="POST">
@@ -33,9 +50,57 @@
         
         {% if not items %}
         <div class="alert alert-info text-center">
-            No clothing items available. <a href="{% url 'addcloth' %}">Add one now!</a>
+            No clothing items available.
         </div>
         {% endif %}
     </div>
 
+
+    <style>/* Add optional custom styling for the toast */
+        .alert-custom {
+            border: 2px solid #28a745; /* Green border for success */
+            background-color: #eaf9e7; /* Light green background */
+            color: #155724; /* Dark green text for good contrast */
+            font-size: 1.1em; /* Slightly larger text */
+            font-weight: 500; /* Medium weight for better readability */
+            box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2); /* Light shadow with a greenish hue */
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover and alert visibility */
+        }
+        
+        .alert-custom .btn-close {
+            background-color: transparent;
+            border: none;
+            color: #28a745; /* Green color for the close button */
+        }
+        
+        /* Hover effect for the alert box */
+        .alert-custom:hover {
+            transform: translateY(-5px); /* Slight lift effect on hover */
+            box-shadow: 0 8px 15px rgba(0, 128, 0, 0.3); /* Stronger shadow on hover */
+        }
+        
+        .alert-custom .btn-close:hover {
+            color: #155724; /* Darker green for close button hover */
+        }
+        
+        
+        </style>
+  
+
+
+
+        <script>
+            // This script will trigger the toast to show up and auto-dismiss
+document.addEventListener('DOMContentLoaded', function () {
+    var toastElements = document.querySelectorAll('.toast');
+    toastElements.forEach(function (toast) {
+        var bsToast = new bootstrap.Toast(toast, {
+            autohide: true,
+            delay: 5000 // 5 seconds auto-dismiss
+        });
+        bsToast.show();
+    });
+});
+
+        </script>
 {% endblock content %}

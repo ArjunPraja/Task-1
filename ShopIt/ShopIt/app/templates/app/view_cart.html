@@ -1,0 +1,93 @@
+{% extends 'Base.html' %}
+
+{% block title %}Your Cart{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Your Cart</h1>
+        
+        {% if cart_items %}
+
+
+
+
+        <form method="POST">
+            {% csrf_token %}
+            <ul class="list-group">
+                {% for item in cart_items %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row w-100">
+                        <div class="col-md-2">
+                            <img src="{{ item.clothing_item.photo.url }}" alt="{{ item.clothing_item.name }}" class="img-fluid" style="max-width: 100px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>{{ item.clothing_item.name }}</h5>
+                            <p>Price: ${{ item.clothing_item.price }}</p>
+                            <p>Gender: {{ item.clothing_item.get_gender_display }}</p>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="quantity_{{ item.id }}">Quantity:</label>
+                            <input type="number" name="quantity" id="quantity_{{ item.id }}" value="{{ item.quantity }}" min="1" class="form-control">
+                            <input type="hidden" name="cart_item_id" value="{{ item.id }}">
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-end">
+                            <button type="submit" name="update_quantity" class="btn btn-primary mr-2">Update</button>
+                            <button type="submit" name="delete_item" class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <span class="badge badge-primary badge-pill">${{ item.total_price }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            
+            <h3 class="mt-4">Total Price: ${{ total_price }}</h3>
+            
+
+            <button id="rzp-button1" type="submit" name="checkout" class="btn btn-success mt-4">Proceed to Checkout</button>
+        </form>
+        {% else %}
+        <p>Your cart is empty.</p>
+        {% endif %}
+    </div>
+
+
+
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "rzp_test_NgZaJsiWs9jWjX", // Enter the Key ID generated from the Dashboard
+            "amount": "{{payment.amount}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Ecommm",
+            "description": "Purchase Trasactions ",
+            "image": "https://example.com/your_logo",
+            "order_id": "{{payment.id}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "handler": function (response){
+                window.location.href=`http://127.0.0.1:8000/success/?razorpay_payment_id=${response.razorpay_payment_id}&razorpay_order_id=${response.razorpay_order_id}& razorpay_signature=${response.razorpay_signature}`
+                alert(response.razorpay_payment_id);
+                alert(response.razorpay_order_id);
+                alert(response.razorpay_signature)
+            },
+            
+           
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+                alert(response.error.code);
+                alert(response.error.description);
+                alert(response.error.source);
+                alert(response.error.step);
+                alert(response.error.reason);
+                alert(response.error.metadata.order_id);
+                alert(response.error.metadata.payment_id);
+        });
+        document.getElementById('rzp-button1').onclick = function(e){
+            rzp1.open();
+            e.preventDefault();
+        }
+        </script>
+{% endblock %}

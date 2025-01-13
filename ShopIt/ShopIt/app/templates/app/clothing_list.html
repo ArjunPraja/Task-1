@@ -1,0 +1,42 @@
+{% extends "Base.html" %}
+{% block title %}View Cloth{% endblock title%}
+
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Clothing Items</h1>
+       
+        <div class="row">
+            {% for item in items %}
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card mb-4 shadow-sm">
+                    <img 
+                        src="{{ item.photo.url }}" 
+                        class="card-img-top" 
+                        alt="{{ item.name }}"
+                        onerror="this.src='{{ STATIC_URL }}images/placeholder.jpg';">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                        <p class="card-text">{{ item.description }}</p>
+                        <p class="card-text">{{ item.price }}</p>
+                        <p class="card-text"><strong>Gender:</strong> {{ item.get_gender_display }}</p>
+                        
+                        <!-- Add to Cart Button -->
+                        <form action="{% url 'add_to_cart' item.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% if not items %}
+        <div class="alert alert-info text-center">
+            No clothing items available. <a href="{% url 'addcloth' %}">Add one now!</a>
+        </div>
+        {% endif %}
+    </div>
+
+{% endblock content %}
